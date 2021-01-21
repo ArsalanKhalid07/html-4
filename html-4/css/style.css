@@ -1,0 +1,267 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../fonts/Tajawal-Bold.woff2') format('woff2'), url('../fonts/Tajawal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* theme css begin */
+
+a:hover {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* theme css end */
+
+
+/* BEGIN: HEADER SEC CSS */
+
+
+/* sidenav-css start */
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -500px;
+    background: #e47225;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 250px;
+}
+
+
+/* The navigation menu links */
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.sidenav a:focus {
+    color: #000;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.mobilecontainer span {
+    color: #e47225;
+    margin-right: 10px;
+    margin: 0px 9px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.mobilecontainer img {
+    width: 63px;
+    margin: -19px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.mobilecontainer {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+
+/* sidenav-css end */
+
+
+/*navigation*/
+
+header {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+}
+
+.main-navigate {
+    margin: 0;
+    padding: 10px 0%;
+    background: white;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    margin-top: 0px;
+    text-align: right;
+    padding: 9px 10px;
+}
+
+.navigation ul {
+    padding: 11px 0px;
+    margin-bottom: 0;
+}
+
+.navigation ul li a {
+    color: #7d6151;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: 'Gotham Book';
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navigation ul li a:hover {
+    color: #3d3934;
+    border-bottom: 2px solid #3d3934;
+    padding-bottom: 5px;
+}
+
+
+/*.navigation ul li.active a {
+    color: #e47225;
+}*/
+
+.navigation ul li {
+    display: inline-block;
+    padding: 0px 13px;
+}
+
+.heder_icon {
+    float: right;
+}
+
+.heder_icon li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.heder_icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.lang {
+    padding-left: 7px;
+    position: relative;
+}
+
+.lang::before {
+    content: "";
+    background-color: #bcb9af;
+    width: 2px;
+    height: 87px;
+    left: 0;
+    position: absolute;
+    top: -32px;
+}
+
+.lang ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.lang ul li {
+    margin: 0 7px;
+}
+
+.lang ul li:last-child a {
+    color: #bcb9af;
+}
+
+.lang ul li a {
+    color: #3d3934;
+    font-family: 'Gotham Book';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.linkedin {
+    text-align: center;
+}
+
+.linkedin i {
+    color: #c7c7c7;
+}
+
+
+/* END: HEADER SEC CSS */
+
+
+.mobilecontainer span {
+    color: #3d3934;
+}
+
+.sidenav {
+    background-color: #3d3934;
+}
